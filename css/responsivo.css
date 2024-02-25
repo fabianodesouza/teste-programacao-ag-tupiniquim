@@ -1,0 +1,233 @@
+
+
+@media(max-width: 1200px) {
+
+    .menu .interface {
+
+        display: none;
+    }
+
+    header .menu-mobile {
+
+        display: block;
+    }
+    
+    header .img-mobile {
+
+        margin-top: 12px;
+    
+        display: block;
+    }
+    
+    header .btn-burger{
+    
+        display: block;
+    }
+
+
+    section.drivers .flex {
+        
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    section.drivers {
+
+        margin-top: -100px;
+    }
+
+    .box-drivers-text {
+
+        width: 100%;
+    }
+
+  
+
+    .box-drivers-img img {
+
+        display: none;
+    }
+
+    section.passengers .flex{
+
+        flex-direction: column;
+    }
+
+    section.passengers .box-pass h3 {
+
+        font-size: 15px;
+    }
+
+    section.passengers {
+
+        margin-top: 30px;
+    
+        
+    }
+
+} 
+
+@media(max-width: 800px) {
+
+    header .img-mobile {
+
+        margin-top: 5px;
+    
+    }
+    
+    .about .box-about-img img {
+
+        display: none;
+    }
+
+    .about .box-about-img-2 img {
+
+        display: none;
+    }
+
+    section.about .flex {
+
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about .box-about-text {
+
+        width: 100%;
+        
+    }
+
+    .about .box-about-text-2 {
+
+        width: 100%;
+        
+    }
+
+    .box-about-text-2 .linha-reta-about {
+
+        padding-top: 20px;
+        
+    }
+
+
+    section.contact {
+
+        margin-top: 100px;
+    
+     
+    }
+
+    .box-contact-1 .box-contact-text {
+        position: relative;
+        margin-top: 400px;
+        z-index: 200;
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    .box-contact-1 .box-contact-text .box-btn {
+
+        justify-content: center;
+        
+    }
+    section.contact .box-contact-2 {
+
+        margin-top: 50px;
+        
+    }
+
+    .box-contact-1 .linha-reta-contact  > img {
+        display: none;
+
+    }
+
+ 
+
+}
+
+
+@media(max-width: 500px) {
+
+    .box-drivers-text h1 {
+
+        font-size: 30px;
+    }
+
+    
+    .about-2 {
+
+        margin-top: 100px;
+    }
+
+    .box-contact-1 .box-contact-text {
+       
+        margin-top: 300px;
+       
+        
+    }
+
+    .box-contact-1 .box-contact-text  h1 {
+
+        font-size: 20px;
+        
+    }
+
+    .box-contact-1 .linha-reta-contact  > img {
+        display: none;
+
+    }
+
+    .box-contact-2 .box-contact-text-2 h1 {
+
+        font-size: 15px;
+    }
+
+    .box-rodape-1 .driveon-footer img {
+
+        width: 40%;
+        margin-left: 17px;
+        
+    }
+
+    .box-rodape-1 .driveon-footer ul li a {
+
+      
+        font-size: 10px;
+    }
+
+    .box-rodape-1 .driveon-footer ul li a i {
+
+        font-size: 10px;
+        padding-right: 5px;
+        
+    }
+
+    .box-rodape-1 .box-conteudo-footer h3 {
+
+        font-size: 12px;
+        padding-bottom: 5px;
+    }
+
+    .box-rodape-1 .box-conteudo-footer ul li a {
+
+     
+        font-size: 10px;
+    }
+
+    .box-rodape-2 {
+
+        align-items: center;
+    }
+
+    .box-rodape-2 p {
+
+       
+        font-size: 9px;
+    }
+
+    .box-rodape-2 .footer-iconTop i {
+
+        font-size: 11px;
+    }
+}

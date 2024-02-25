@@ -1,0 +1,852 @@
+/* Estilo geral */
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+
+    --gray: #8B87A2;
+    --purple: #54149E;
+}
+
+body {
+
+    background-color: #FFFFFF;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.interface {
+
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+
+    display: flex;
+}
+
+.selecionado {
+
+    color: var(--purple);
+    text-decoration: line-through;
+    
+}
+
+/* Estilo Header */
+
+header .menu-mobile {
+
+    display: none;
+}
+
+header .img-mobile {
+
+    display: none;
+}
+
+
+
+
+header {
+
+    padding: 40px 4%;
+}
+
+header.menu {
+
+   position: fixed;
+   z-index: 1000;
+   top: 0;
+}
+
+header>.interface {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header>.interface nav {
+
+    display: flex;
+    align-items: center;
+}
+
+header a {
+
+    text-decoration: none;
+    color: var(--gray);
+    font-size: 18px;
+    font-weight: 500;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+
+    color: black;
+    -webkit-animation: animaButton 0.5s ease-in-out infinite alternate;
+    -moz-animation: animaButton 0.5s ease-in-out infinite alternate;
+    -o-animation: animaButton 0.5s ease-in-out infinite alternate;
+    animation: animaButton 0.5s ease-in-out infinite alternate;
+
+}
+
+header nav ul {
+
+    list-style-type: none;
+}
+
+header nav.menu-desk ul li {
+
+    display: inline-block;
+    padding: 0 40px;
+
+
+}
+
+.btn .login-btn {
+
+   
+    background: none;
+    border: none;
+    padding: 9px 20px;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-top: 5px;
+    color: var(--purple);
+    font-weight: 500;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn .login-btn img {
+
+    padding-right: 5px;
+    margin-bottom: -3px;
+    height: 20px;
+}
+
+.btn .signup-btn {
+
+    
+    color: #2274FE;
+    font-size: 18px;
+    font-weight: 500;
+    background: none;
+    margin-left: 10px;
+    border: solid 1px #E4E1FF;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+@-webkit-keyframes animaButton {
+
+    0% {
+
+        transform: scale(1);
+    }
+
+    100% {
+
+        transform: scale(1.05);
+    }
+}
+
+@-moz-keyframes animaButton {
+
+    0% {
+
+        transform: scale(1);
+    }
+
+    100% {
+
+        transform: scale(1.05);
+    }
+}
+
+@-o-keyframes animaButton {
+
+    0% {
+
+        transform: scale(1);
+    }
+
+    100% {
+
+        transform: scale(1.05);
+    }
+}
+
+
+@keyframes animaButton {
+
+    0% {
+
+        transform: scale(1);
+    }
+
+    100% {
+
+        transform: scale(1.05);
+    }
+}
+
+
+
+.btn .signup-btn:hover {
+
+    background-color: #2274FE;
+    color: white;
+    -webkit-animation: animaButton 0.5s ease-in-out infinite alternate;
+    -moz-animation: animaButton 0.5s ease-in-out infinite alternate;
+    -o-animation: animaButton 0.5s ease-in-out infinite alternate;
+    animation: animaButton 0.5s ease-in-out infinite alternate;
+}
+
+.btn .login-btn:hover {
+
+    border: solid 1px var(--purple);
+    border-radius: 10px;
+    box-shadow: 0 0 1rem  var(--purple);
+    -webkit-animation: animaButton 0.5s ease-in-out infinite alternate;
+    -moz-animation: animaButton 0.5s ease-in-out infinite alternate;
+    -o-animation: animaButton 0.5s ease-in-out infinite alternate;
+    animation: animaButton 0.5s ease-in-out infinite alternate;
+}
+
+
+/* =====================================================MENU MOBILE====================================== */
+
+header .menu-mobile {
+
+    background-color: black;
+    height: 100vh;
+    width: 0%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 1020;
+    transition: .5s;
+    
+}
+
+.menu-mobile nav {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-mobile nav ul {
+    
+    text-align: right;
+}
+
+
+.menu-mobile nav ul li a {
+
+    padding: 20px 4%;
+}
+
+.menu-mobile nav ul li a:hover {
+
+    color: #FFFFFF;
+}
+
+.menu-mobile.abrir-menu {
+
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-mobile {
+
+    display: block;
+}
+
+
+
+.btn-burger {
+
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+.btn-burger .bi-list {
+
+    color: var(--purple);
+    font-size: 40px;
+}
+
+.menu-mobile .btn-fechar {
+
+    padding-top: 10px;
+}
+
+.menu-mobile .btn-fechar .bi-x-lg {
+
+    color: var(--purple);
+    font-size: 30px;
+}
+
+.overlay-mobile {
+
+    display: none;
+    background-color: #000000df;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1010;
+
+
+}
+
+#menu_burger {
+
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background: #fff;
+    color: black;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+
+
+
+/*************************** Estilo Seção Drivers *********************************************************** */
+
+main {
+
+    margin-top: 200px;
+}
+section.drivers {
+    padding: 40px 4%;
+}
+
+
+
+.box-drivers-text {
+
+    width: 30%;
+}
+
+.box-drivers-text h1 {
+
+    color: var(--purple);
+    font-size: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: 600;
+}
+
+.box-drivers-text p {
+
+    color: var(--gray);
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.box-drivers-text button {
+
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    background: linear-gradient(45deg,#0000FF , #00BFFF);
+    cursor: pointer;
+}
+
+
+
+.box-drivers-text button:hover {
+
+    -webkit-animation: animaButton 0.5s ease-in-out infinite alternate;
+    -moz-animation: animaButton 0.5s ease-in-out infinite alternate;
+    -o-animation: animaButton 0.5s ease-in-out infinite alternate;
+    animation: animaButton 0.5s ease-in-out infinite alternate;
+    box-shadow: 0 0 1rem  #00BFFF;
+    
+}
+
+
+
+.box-drivers-img img {
+
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+
+/*************************** Estilo Seção Passengers *********************************************************** */
+
+section.passengers {
+
+    margin-top: 400px;
+
+    padding: 40px 4%;
+}
+
+section.passengers .linha-reta {
+
+    text-align: center;
+}
+
+section.passengers .linha-reta img {
+
+    margin-left: -150px;
+    width: 100px;
+}
+
+section.passengers h1 {
+
+    text-align: center;
+    color: var(--purple);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+section.passengers .box-pass {
+
+    text-align: center;
+    
+}
+
+section.passengers .box-pass img {
+
+    height: 40%;
+}
+
+section.passengers .box-pass h3 {
+
+    color: var(--purple);
+    padding: 30px 0;
+}
+
+section.passengers .box-pass p {
+
+    width: 70%;
+    margin: 0 auto;
+    color: var(--gray);
+    font-size: 14px;
+    font-weight: 600;
+    
+}
+
+/*************************** Estilo Seção About *********************************************************** */
+
+section.about {
+
+    padding: 40px 4%;
+}
+
+section.about .flex {
+
+    justify-content: center;
+}
+
+.about .box-about-img{ 
+
+    width: 50%;
+    
+}
+
+.about .box-about-img img {
+
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.about .box-about-text {
+
+    width: 50%;
+    
+}
+
+.box-about-text .linha-reta-about {
+
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.box-about-text .linha-reta-about img {
+
+    width: 100px;
+}
+
+.box-about-text p {
+
+    width: 80%;
+    color: var(--gray);
+    font-weight: 600;
+}
+
+.box-about-text a {
+
+    position: absolute;
+    text-decoration: none;
+    color: #2677FC;
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 40px;
+    transition: .5s;
+
+}
+
+.box-about-text a:hover {
+
+    transform: scale(1.05);
+    text-shadow: 0 0 1rem  #00BFFF;
+}
+
+.about .box-about-img-2{ 
+
+    width: 50%;
+    
+}
+
+.about-2 {
+
+    margin-top: 300px;
+}
+
+
+.about .box-about-text-2 {
+
+    width: 50%;
+    
+}
+
+.box-about-text-2 .linha-reta-about {
+
+    padding-top: 250px;
+    padding-bottom: 50px;
+}
+
+.box-about-text-2 .linha-reta-about img {
+
+    width: 100px;
+}
+
+.about .box-about-img-2 img {
+
+    position: absolute;
+    right: 0;
+    height: 100%;
+}
+
+.box-about-text-2 h1 {
+
+    color: var(--purple);
+    padding-bottom: 30px;
+}
+
+.box-about-text-2 p {
+
+    width: 80%;
+    color: var(--gray);
+    font-weight: 600;
+    padding-top: 40px;
+}
+
+.box-about-text-2 a {
+
+    position: absolute;
+    text-decoration: none;
+    color: #2677FC;
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 30px;
+    transition: .5s;
+
+}
+
+.box-about-text-2 span a {
+
+    display: inline-block;
+    flex-direction: column;
+    color: var(--purple);
+    margin-top: -31.5px;
+    padding-left: 2px;
+    
+}
+
+.box-about-text-2 span a img {
+    position: absolute;
+    width: 45px;
+    margin-left: -44px;
+    margin-top: 20px;
+}
+
+.box-about-text-2 a:hover {
+
+    transform: scale(1.05);
+    text-shadow: 0 0 1rem  #00BFFF;
+}
+
+/*************************** Estilo Seção Contact *********************************************************** */
+
+section.contact {
+
+    margin-top: 300px;
+    /* padding: 40px 4%; */
+
+ 
+}
+
+section.contact  .flex {
+
+    justify-content: space-between;
+    
+}
+
+.box-contact-1 .box-contact-img img {
+
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+   
+}
+
+.box-contact-1 .box-contact-text {
+    position: relative;
+    margin-top: 250px;
+    z-index: 200;
+    width: 50%;
+    
+}
+
+
+.box-contact-1 .box-contact-text  h1 {
+
+    color: var(--purple);
+    font-weight: 600; 
+    
+}
+
+.box-contact-1 .box-contact-text .box-btn {
+
+    display: flex;
+    
+}
+
+.box-contact-1 .box-contact-text .box-btn .bnt-contact button {
+
+    background: black;
+    padding: 8px 30px;
+    margin: 40px 20px 20px 0;
+    color: #FFFFFF;
+    text-align: justify;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   
+}
+
+
+
+.box-contact-1 .box-contact-text .box-btn .bnt-contact button i {
+    position: absolute;
+    font-size: 25px;
+    margin-bottom: -30px;
+    margin-left: -30px;
+    
+}
+
+.box-contact-1 .box-contact-text .box-btn .bnt-contact button .bi-caret-right-fill {
+
+    color: #00F075;
+    rotate: 310deg;
+    font-size: 30px;
+}
+
+.box-contact-1 .linha-reta-contact  > img {
+    position: absolute;
+    width: 100px;
+    margin-top: 200px;
+    margin-left: 320px;
+    z-index: 300;
+    
+}
+
+section.contact .box-contact-2 {
+
+    margin-top: 300px;
+    padding: 40px 4%;
+}
+
+.box-contact-2 .box-contact-text-2 img {
+
+    width: 100px;
+}
+
+
+
+.box-contact-2 .box-contact-text-2 h1 {
+
+    color: var(--purple);
+    font-weight: 600;
+    padding-bottom: 30px;
+    cursor: pointer;
+}
+
+.box-contact-2 .box-contact-text-2 h1:hover {
+
+    -webkit-animation: animaButton 0.5s ease-in-out infinite alternate;
+    -moz-animation: animaButton 0.5s ease-in-out infinite alternate;
+    -o-animation: animaButton 0.5s ease-in-out infinite alternate;
+    animation: animaButton 0.5s ease-in-out infinite alternate;
+    color:#26E0FA;
+}
+
+.box-contact-2 .seta {
+
+    height: 50px;
+}
+
+/*************************** Estilo Footer *********************************************************** */
+
+footer {
+
+    background-image: url('../imagens/fundo-footer-teste-programador.png.jpg');
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+}
+
+.rodape {
+
+    padding: 40px 4%;
+}
+
+.rodape .box-rodape-1 {
+
+    justify-content: space-between;
+    padding-top: 50px;
+    height: 400px;
+}
+
+
+.box-rodape-1 .driveon-footer img {
+
+   width: 60%;
+   margin-left: 17px;
+   
+}
+
+
+.box-rodape-1 .driveon-footer ul li {
+
+    padding: 20px;
+    list-style-type: none;
+    
+}
+
+.box-rodape-1 .driveon-footer ul li a {
+
+    display: inline-block;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+.box-rodape-1 .driveon-footer ul li a:hover {
+
+    -webkit-animation: animaButton 0.5s ease-in-out infinite alternate;
+    -moz-animation: animaButton 0.5s ease-in-out infinite alternate;
+    -o-animation: animaButton 0.5s ease-in-out infinite alternate;
+    animation: animaButton 0.5s ease-in-out infinite alternate;
+    color: #b3ff00;
+}
+
+.box-rodape-1 .driveon-footer ul li a i {
+
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+.box-rodape-1 .box-conteudo-footer h3 {
+
+    color: #FFFFFF;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+.box-rodape-1 .box-conteudo-footer ul li {
+
+    padding-bottom: 12px;
+    list-style-type: none;
+}
+
+.box-rodape-1 .box-conteudo-footer ul li a {
+
+    display: inline-block;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 12px;
+    transition: .5s;
+}
+
+.box-rodape-1 .box-conteudo-footer ul li a:hover {
+
+    -webkit-animation: animaButton 0.5s ease-in-out infinite alternate;
+    -moz-animation: animaButton 0.5s ease-in-out infinite alternate;
+    -o-animation: animaButton 0.5s ease-in-out infinite alternate;
+    animation: animaButton 0.5s ease-in-out infinite alternate;
+    color: #b3ff00;
+}
+
+.rodape .box-rodape-2{
+
+    justify-content: space-between;
+    margin-top: 15px;
+
+}
+
+.box-rodape-2 .footer-iconTop i {
+
+    padding: 10px;
+    color: #FFFFFF;
+}
+
+.box-rodape-2 .footer-iconTop .bi-linkedin {
+
+    padding-right: 0;
+}
+
+.box-rodape-2 p {
+
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+
+
+
+
+

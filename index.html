@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Programação - Fabiano</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- FIM GOOGLE FONTS -->
+
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- FIM BOOTSTRAP ICONS -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+</head>
+
+<body>
+    <!----------------------------------------INICIO MENU TOPO --------------------------------------------------->
+    <header class="menu">
+
+        <div class="interface">
+
+            <nav class="menu-desk">
+                <img src="imagens/logo-teste-programador.png" alt="logo teste programador">
+                <ul>
+                    <li><a class="link-menu selecionado" href="#drivers" title="Drivers">Drivers</a></li>
+                    <li><a class="link-menu" href="#passengers" title="Passengers">Passengers</a></li>
+                    <li><a class="link-menu" href="#about" title="About us">About Us</a></li>
+                    <li><a class="link-menu" href="#contact" title="Contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="btn">
+                <button class="login-btn"><img src="imagens/icone-login-teste-programador.png" alt="login">Log
+                    in</button>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+        </div>
+
+        <!----------------------------------------INICIO MENU MOBILE --------------------------------------------------->
+            <div class="img-mobile">
+                <img src="imagens/logo-teste-programador.png" alt="logo teste programador">
+            </div>
+            
+            <div class="btn-burger" id="btn_menu_mobile">
+                <i class="bi bi-list"></i>
+            </div>
+
+
+            <div class="menu-mobile" id="menu-mobile">
+
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a class="link-menu selecionado" href="#drivers" title="Drivers">Drivers</a></li>
+                        <li><a class="link-menu" href="#passengers" title="Passengers">Passengers</a></li>
+                        <li><a class="link-menu" href="#about" title="About us">About Us</a></li>
+                        <li><a class="link-menu" href="#contact" title="Contact">Contact</a></li>
+                        <li><a class="link-menu" href="#" title="Log in">Log In</a></li>
+                        <li><a class="link-menu" href="#" title="Sign up">Sign Up</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="overlay-mobile" id="overlay-mobile"></div>
+       
+        <!----------------------------------------FIM MENU MOBILE --------------------------------------------------->
+
+    </header>
+    <!----------------------------------------FIM MENU TOPO --------------------------------------------------->
+    <main>
+
+        <!------------------------------------INICIO SEÇÃO DRIVERS --------------------------------------------------->
+        <section class="drivers section" id="drivers">
+            <div class="interface">
+
+                <div class="flex">
+
+                    <div class="box-drivers-text">
+
+                        <h1>Start Your Workday Comfortably</h1>
+
+                        <p>
+                            Get in, sit back and experience the comfort of car
+                            hat takes you directly to your destination.<br>
+                            Arriving work as a sardine with public transport or
+                            weating is a thing of the past.
+                        </p>
+
+                        <button>Discover</button>
+
+                    </div>
+
+                    <div class="box-drivers-img">
+                        <img src="imagens/img-banner-teste-programador.png" alt="Banner teste programador">
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!------------------------------------FIM SEÇÃO DRIVERS --------------------------------------------------->
+
+        <!----------------------------------INCIO SEÇÃO PASSENGERS --------------------------------------------------->
+
+        <section class="passengers section" id="passengers">
+            <div class="interface">
+                <div class="linha-reta">
+                    <img src="imagens/linha-reta-teste-programador.png.jpg" alt="Linha reta">
+                </div>
+
+                <h1>How to get started?</h1>
+                <div class="flex">
+
+                    <div class="box-pass">
+                        <img src="imagens/solucao-1-teste-programador.png" alt="Solução 1">
+                        <h3>Create your <br> account</h3>
+                        <p>
+                            Complete your account
+                            with some basic information
+                            including your home
+                            your work location and
+                            your working hours.
+                        </p>
+
+
+                    </div>
+
+
+                    <div class="box-pass">
+                        <img src="imagens/solucao-2-teste-programador.png" alt="Solução 2">
+                        <h3>Plan your <br> journeys</h3>
+                        <p>
+                            Open the app,
+                            click the agenda tab
+                            and enter your working hours
+                            for the coming week.
+                            Then you'll be presented
+                            with a list of our drivers.
+                        </p>
+                    </div>
+
+
+                    <div class="box-pass">
+                        <img src="imagens/solucao-3-teste-programador.png" alt="Solução 3">
+                        <h3>Meet your <br> driver</h3>
+                        <p>
+                            Use our chat to get to know
+                            your match with our driver.
+                            You'll be picked up at
+                            your regular location,
+                            or agree on an alternative
+                            pick-up location.
+                        </p>
+                    </div>
+
+
+                    <div class="box-pass">
+                        <img src="imagens/solucao-4-teste-programador.png" alt="Solução 4">
+                        <h3>Enjoy your <br> journey</h3>
+                        <p>
+                            Get in, sit back
+                            and enjoy yourjourney
+                            that takes you directly
+                            to your destination
+                            with some free
+                            cup of coffee from us.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!----------------------------------FIM SEÇÃO PASSENGERS --------------------------------------------------->
+
+        <!----------------------------------INICIO SEÇÃO ABOUT US --------------------------------------------------->
+
+        <section class="about section" id="about">
+
+            <div class="interface">
+
+                <div class="flex">
+
+                    <div class="box-about-img">
+                        <img src="imagens/img-fundo-teste-programador.png" alt="Fundo teste">
+                    </div>
+
+                    <div class="box-about-text">
+
+                        <div class="linha-reta-about">
+
+                            <img src="imagens/linha-reta-teste-programador.png.jpg" alt="Linha reta">
+
+                        </div>
+
+
+                        <p>
+                            DriveOn is a mobile carpool platform that effortlessly
+                            brings commuters together in one car.
+                        </p>
+                        <p>
+                            Traveling home and work will never be the same again. <br>
+                            Our mission is to stop traffic jams and C02 pollution
+                            as a result of inefficient car commuting.
+                            <br><br>
+                            Are you in?
+                        </p>
+                        <a href="#" title="Learn more">Learn more »</a>
+                    </div>
+                </div>
+
+                <div class="flex about-2">
+                    <div class="box-about-text-2">
+
+                        <div class="linha-reta-about">
+
+                            <img src="imagens/linha-reta-teste-programador.png.jpg" alt="Linha reta">
+
+                        </div>
+
+                        <h1>Our commitment <br> to your safety</h1>
+                        <p>
+                            With every safety feature we add
+                            and every standard in the Community Guide that we uphold,
+                            we are committed to protecting you throughout the journey.<br>
+                            Learn more about our Community Guide<span> <a href="#"> here<img
+                                        src="imagens/linha-reta-teste-programador.png.jpg" alt="">.</a></span>
+                            <br><br>
+                        </p>
+                        <a href="#" title="Learn more">See all safety features »</a>
+                    </div>
+
+                    <div class="box-about-img-2">
+                        <img src="imagens/img-fundo-2-teste-programador.png" alt="Fundo teste 2">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!----------------------------------FIM SEÇÃO ABOUT US --------------------------------------------------->
+
+        <!----------------------------------INICIO SEÇÃO CONTACT --------------------------------------------------->
+
+        <section class="contact section" id="contact">
+
+            <div class="interface">
+
+                <div class="flex box-contact-1 ">
+
+                    <div class="box-contact-img">
+                        <img src="imagens/img-fundo-4-teste-programador.png" alt="">
+                    </div>
+
+                    <div class="linha-reta-contact">
+                        <img src="imagens/linha-reta-teste-programador-2.png.jpg" alt="Linha reta">
+                    </div>
+
+                    <div class="box-contact-text">
+
+
+                        <h1>
+                            Download the DriveOn application <br>
+                            to get more benefits and experience
+                        </h1>
+                        <div class="box-btn">
+                            <a href="#" class="bnt-contact">
+
+                                <button>
+                                    <i class="bi bi-caret-right-fill"></i>
+                                    <small>Get it on</small><br>
+                                    Clay Store
+                                </button>
+
+                            </a>
+
+                            <a href="#" class="bnt-contact">
+
+                                <button>
+                                    <i class="bi bi-apple"></i>
+                                    <small>Download on the</small><br>
+                                    Play APP
+                                </button>
+
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="flex box-contact-2">
+
+                    <div class="box-contact-text-2">
+
+                        <h1>Register to be <br> a driver partner</h1>
+
+
+
+                        <img src="imagens/linha-reta-teste-programador.png.jpg" alt="Linha reta">
+                    </div>
+
+
+                    <img class="seta" src="imagens/setas-teste-programador.png" alt="Seta">
+
+                    <div class="box-contact-text-2">
+
+                        <h1>Register to start <br> your journey</h1>
+
+                        <img src="imagens/linha-reta-teste-programador.png.jpg" alt="Linha reta">
+
+                    </div>
+
+
+                    <img class="seta" src="imagens/setas-teste-programador.png" alt="Seta">
+
+                </div>
+            </div>
+
+        </section>
+        <!----------------------------------FIM SEÇÃO CONTACT --------------------------------------------------->
+
+        <!----------------------------------INICIO FOOTER  --------------------------------------------------->
+        <footer>
+
+            <div class="rodape">
+                <div class="interface">
+
+                    <div class="flex box-rodape-1">
+
+                        <div class="driveon-footer">
+                            <img src="imagens/logo-teste-programador-2.png" alt="Logo">
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="bi bi-question-circle"></i>Resolution Center</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><i class="bi bi-chat-right-fill"></i>English</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="box-conteudo-footer">
+                            <h3>About Us</h3>
+
+                            <ul>
+                                <li>
+                                    <a href="#">Newsroom</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Investor relations</a>
+                                </li>
+                                <li>
+                                    <a href="#">Global citizenship</a>
+                                </li>
+                                <li>
+                                    <a href="#">Safety</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Carrer</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="box-conteudo-footer">
+                            <h3>Our product</h3>
+
+                            <ul>
+                                <li>
+                                    <a href="#">Take a trip</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Drive it</a>
+                                </li>
+                                <li>
+                                    <a href="#">Eats</a>
+                                </li>
+                                <li>
+                                    <a href="#">DriveOn for Business</a>
+                                </li>
+                                <li>
+                                    <a href="#">DriveOn Freight</a>
+                                </li>
+                                <li>
+                                    <a href="#">Health</a>
+                                </li>
+                                <li>
+                                    <a href="#">DriveOn Air</a>
+                                </li>
+                                <li>
+                                    <a href="#">Advanced Technologies Croup</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <hr>
+                    <div class="flex box-rodape-2">
+                        <div>
+                            <p>&copy; 2024 DriveOn Technologies Inc.</p>
+                        </div>
+
+                        <div class="footer-iconTop">
+
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <!----------------------------------FIM FOOTER  --------------------------------------------------->
+    </main>
+
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Java Script -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
